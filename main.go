@@ -20,8 +20,8 @@ func main() {
 	mux.HandleFunc("/thread/post", postThread)
 	mux.HandleFunc("/thread/read", readThread)
 
-	server:=http.Server{
-		Addr: "0.0.0.0:8080",
+	server := http.Server{
+		Addr:    "0.0.0.0:8080",
 		Handler: mux,
 	}
 	server.ListenAndServe()

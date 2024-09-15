@@ -1,6 +1,7 @@
 package main
 
 import (
+	"check7/socialnetwork/data"
 	"net/http"
 )
 
